@@ -5,7 +5,7 @@ import bcryptjs from "bcryptjs";
 import jwt from "jsonwebtoken"
 
 Connect()
-export async function POST(request:NextResponse){
+export async function POST(request:NextRequest){
     try {
        const {email,password} = await request.json()
         //chcking if the user exists
