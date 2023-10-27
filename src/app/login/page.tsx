@@ -45,6 +45,6 @@ export default function LoginPage(){
     <input className='p-2 border-2 border-red-300 rounded-sm' placeholder='Email' onChange={(event)=>{setUser({...user,email:event.target.value})}} type='email'/><br></br>
     <input className='p-2 border-2 border-red-300 rounded-sm' placeholder='Password' onChange={(event)=>{setUser({...user,password:event.target.value})}} type='password'/><br></br>
     <button onClick={onSignIn} className='p-2 bg-blue-400 rounded-md'>{buttonDisabled?"Fill the Form":"Login"}</button>
-    Don't have an account? <Link  href='/signup'>Sign up</Link>
+    Dont have an account? <Link  href='/signup'>Sign up</Link>
     </div>
 }
